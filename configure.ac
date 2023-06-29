@@ -11,6 +11,8 @@ AC_PROG_CC
 AC_PROG_INSTALL
 
 # Checks for libraries.
+AC_SEARCH_LIBS([gethostbyaddr], [nsl])
+AC_SEARCH_LIBS([listen], [socket])
 
 # Checks for header files.
 AC_CHECK_HEADERS([fcntl.h netinet/in.h stdlib.h string.h sys/ioctl.h sys/socket.h sys/time.h termios.h unistd.h])
